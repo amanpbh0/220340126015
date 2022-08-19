@@ -1,0 +1,18 @@
+version: '3.3'
+services:
+    broker :
+        image : eclipse-mosquitto
+        hostname : broker
+        container_name : broker_exam
+        expose :
+            - "1883"
+        ports :
+            - 6502:1883
+        volumes :
+            - /home/diot/Documents/Exam_aman/Q5/mosquitto.conf:/mosquitto/config/mosquitto.conf
+    subscriber_exam :
+        build : ./SUB
+        container_name : subscriber_exam
+        hostname : sub
+        depends_on :
+            - broker

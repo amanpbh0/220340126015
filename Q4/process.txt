@@ -1,0 +1,5 @@
+1. create a python file
+2. create a docker file
+3. build docker file with cmd (docker build -d image_name .(path))
+4. ducker build with command (docker run -itd --name container_name image_name sh)
+5.run the command in container (python3 exam.py

@@ -1,0 +1,18 @@
+1. Search for IAM and click on it
+2. On the left hand side click on Users
+3. Under Users, click on "Add users" (refer iam-1.png)
+4. Add your username as "dev-iot-elevate" in the User name section
+5. Under "Select AWS access type" select both the "Access key" and
+    "Password" checkbox
+7. In Console password, select the "Custom password" radio button
+    add add a custom password to it. (refer iam-2.png)
+8. Now, click on Next: Permission button in the bottom right corner
+9. Drop down the "Set permissions boundary" and select "Use a permissions 
+    boundary to control the maximum user permissions"
+10. In the search bar search for ec2 and you will get "AmazonEC2FullAccess", selct it 
+
+11. "Add tags" section is an optional section which can be skipped
+7.4. Click on "Next: Review"
+8. Now click on "Create user"
+9. Now use the credential provided and login to the user named "dev-iot-elevate"
+

@@ -1,0 +1,25 @@
+1. Search for EC2 in the search panel in your AWS console and click on EC2
+
+2. Click on Launch instance, present in the Launch instance menu
+3. In the Name and tags section give a name to your instance/machine
+
+4. In the Application and OS Images section select the OS as Ubuntu
+5. In the AMI section of this you can select various options but
+    go with the ubuntu-20.04 free trial
+6. Under Key pair section, click on "Create new key pair" option
+    this will give you a UI for selection of certification.
+
+7. Select the Security tab and click on the "security group"
+8. In Inbound rules, click on "Edit inbound rules" button (refer ec2-3.png)
+9. In rule 1 select the Type as SSH and Port range as 22 and Source type as Anywhere-IPv4
+10. In rule 2 select the Type as Custom TCP and Port range as 80 and Source type as Anywhere-IPv4
+
+11. Click on "Connect" 
+15. After this you will get the terminal of your instance
+16. Run the following commands
+    sudo apt update
+    sudo apt upgrade -y
+    sudo apt install apache2 -y
+17. Copy your instance's public ip and paste it in your local machine's browser
+    13.127.109.203:80
+

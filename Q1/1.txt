@@ -1,0 +1,13 @@
+Go to thingsboard
+Create device
+Create access token
+
+Run publisher  node publisher.js
+Run subscriber node subscriber.js
+
+change access token in subscriber 
+	username:
+	
+change topic name ...which is test in my file 
+
+
